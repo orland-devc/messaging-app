@@ -69,7 +69,7 @@ class ProfileUpdateTest extends TestCase
             ->assertRedirect('/');
 
         $this->assertNull($user->fresh());
-        $this->assertFalse(auth()->check());
+        $this->assertFalse(\Illuminate\Support\Facades\Auth::check());
     }
 
     public function test_correct_password_must_be_provided_to_delete_account(): void

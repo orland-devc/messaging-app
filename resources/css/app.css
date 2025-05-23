@@ -64,3 +64,6 @@ select:focus[data-flux-control] {
 /* \[:where(&)\]:size-4 {
     @apply size-4;
 } */
+
+@source '../../vendor/namu/wirechat/resources/views/**/*.blade.php';
+@source '../../vendor/namu/wirechat/src/Livewire/**/*.php';
